@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gradient-to-br from-rose-pastel via-creme to-lavande min-h-screen;
+  }
+}
+
+@layer components {
+  .glassmorphism {
+    @apply backdrop-blur-md bg-white/30 border border-white/20 shadow-xl;
+  }
+  
+  .neumorphism {
+    @apply bg-white/50 shadow-[20px_20px_60px_#d1d1d1,-20px_-20px_60px_#ffffff];
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-rose-doux to-violet-doux bg-clip-text text-transparent;
+  }
+}
